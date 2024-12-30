@@ -16,7 +16,7 @@
               Hey，很高興認識你！
             </h1>
             <p class="text-sm font-medium sm:text-base text-stone-800 dark:text-stone-300">
-              也善於將抽象的概念轉換成具體可行的設計成果。我也習慣以使用者為中心去思考問題，並且致力於帶給產品使用者更多的價值。 
+              我是一名 UI/UX 設計師，這是我對於咖啡廳資料庫及登入等功能的練習專案，希望你會喜歡！
             </p>
           </div>
         </div>
