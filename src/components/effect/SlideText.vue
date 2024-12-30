@@ -18,10 +18,10 @@
     data() {
       return {
         texts: [
-          'AAA',
-          'BBB',
-          'CCC',
-          'DDD',
+          'Paw Cafe',
+          'Welcome',
+          'Paw Cafe',
+          'Welcome',
         ]
       }
     }
