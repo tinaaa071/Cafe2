@@ -1,0 +1,25 @@
+@layer components {
+    .card {
+        .link {
+            @apply font-bold text-2xl
+        }
+    }
+    .text-outline {
+        @apply text-transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: currentColor;
+        -webkit-text-stroke-width: .03em;
+    }
+    .input {
+        @apply p-2 w-full border-2 border-stone-900 dark:border-white dark:bg-stone-900 dark:text-white placeholder:font-medium placeholder:text-stone-400 disabled:opacity-30 disabled:pointer-events-none
+    }
+    .radio {
+        @apply mr-2 border-2 appearance-none border-stone-300  
+    }
+    .button-main {
+        @apply flex gap-2 justify-center items-center py-3 w-full font-bold text-center border-2 border-stone-900 text-white transition-colors duration-300 bg-stone-900 hover:bg-stone-500 dark:bg-white dark:border-white dark:text-stone-900 dark:hover:bg-stone-500 dark:hover:text-white 
+    }
+    .button-sub {
+        @apply flex gap-2 justify-center items-center py-3 w-full font-bold border-2 border-stone-900 text-stone-900 bg-transparent transition-colors duration-300 hover:bg-stone-700 hover:text-white dark:border-white dark:text-white
+    }
+}
