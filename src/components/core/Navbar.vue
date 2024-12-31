@@ -23,9 +23,9 @@
                 <!-- Logo -->
                 <div class="z-10">
                   <!-- Light -->
-                  <img class="block dark:hidden" src="/dist/Icon.svg" alt="">
+                  <img class="block dark:hidden" src="/src/assets/Icon.svg" alt="">
                   <!-- Dark -->
-                  <img class="hidden dark:block"  src="/dist/Icon-d.svg" alt="">
+                  <img class="hidden dark:block"  src="/src/assets/Icon-d.svg" alt="">
                 </div>
                 <div class="absolute left-0 z-0 pt-2 origin-left scale-[0.7] group-hover:left-14 transition-all duration-200 opacity-0 group-hover:opacity-100 group-hover:ease-in-out">
                   <svg xmlns="http://www.w3.org/2000/svg" width="84" height="40" fill="none" viewBox="0 0 84 40">
