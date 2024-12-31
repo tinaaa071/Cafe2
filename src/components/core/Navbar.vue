@@ -31,7 +31,7 @@
                   </svg>
                 </div>
                 <h1 :class="showMenu ? 'text-white dark:text-stone-900' : 'text-stone-900 dark:text-white'" class="text-xl font-medium transition-colors duration-300 group-hover:text-stone-400">
-                  <SlideText />
+                  <SlideText class="hidden sm:block" />
                 </h1>
               </div>
             </RouterLink>
@@ -135,7 +135,7 @@
             </li>
             <li class="flex gap-2">
               <!-- Language -->
-              <LanguageSwitcher class="border-2 border-stone-50" />
+              <!-- <LanguageSwitcher class="border-2 border-stone-50" /> -->
               <!-- Dark Toggle -->
               <DarkModeToggle class="border-2 border-stone-50" />
             </li>
