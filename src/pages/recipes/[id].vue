@@ -61,7 +61,7 @@
                     <p class="mb-3 font-bold md:text-xl">
                         食材
                     </p>
-                    <ul class="text-sm font-medium list-disc list-inside md:text-lg">
+                    <ul class="text-sm font-normal list-disc list-inside md:text-lg">
                       <li v-for="(ingredient, index) in adjustedIngredients" :key="index">
                         <template v-if="ingredient.quantity">
                           {{ ingredient.quantity }} {{ ingredient.unit || '' }} {{ ingredient.name }}
@@ -82,7 +82,7 @@
                         <hr class="w-full border-[1.5px] border-stone-900 dark:border-white">
                     </div>
                     <!-- 步驟 -->
-                    <ul class="text-sm font-light md:text-lg">
+                    <ul class="text-sm font-normal md:text-lg">
                         <template v-if="item?.steps">
                             <li v-for="(step, index) in item.steps" :key="index">
                             <span class="font-bold">STEP {{ index + 1 }}</span>&nbsp;&nbsp;&nbsp;&nbsp;{{ step }}
