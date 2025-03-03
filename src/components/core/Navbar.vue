@@ -161,7 +161,7 @@
 </template>
 
 <script>
-import { computed, ref, onMounted, onBeforeUnmount } from "vue";
+import { computed, ref, onMounted, onBeforeUnmount, watch } from "vue";
 import { useRoute, useRouter } from 'vue-router';
 import { useStore } from 'vuex';
 import MingcuteEarth3Fill from '~icons/mingcute/earth-3-fill';
@@ -188,7 +188,18 @@ export default {
     const cartItems = computed(() => store.getters.cartItems);
     const cartCount = computed(() => cartItems.value.reduce((acc, item) => acc + item.quantity, 0));
 
-    const toggleMenu = () => showMenu.value = !showMenu.value;
+    watch(showMenu, (newVal) => {
+      document.body.style.overflow = newVal ? "hidden" : "";
+    });
+
+    // 監聽路由變化，關閉 Menu
+    watch(route, () => (showMenu.value = false));
+
+    // 組件卸載時確保恢復滾動
+    onBeforeUnmount(() => (document.body.style.overflow = ""));
+
+    // 切換菜單
+    const toggleMenu = () => (showMenu.value = !showMenu.value);
 
     // Update main menu items based on your pages structure
     const menuItems = [
