@@ -7,7 +7,7 @@
           <div class="w-full lg:w-1/2">
             <ChatBubble class="mb-4 w-52" />
             <!-- 圖片 -->
-            <div class="bg-cover bg-center border-2 border-stone-900 dark:border-white overflow-hidden mb-4 aspect-[3/2] bg-[url('https://i.pinimg.com/control/564x/b5/b4/f9/b5b4f9cad18a8a787c3dd9bd39fc2f5e.jpg')]">
+            <div class="bg-cover bg-center border-2 border-stone-900 dark:border-white overflow-hidden mb-4 aspect-[3/2] bg-[url('https://raw.githubusercontent.com/tinaaa071/video/main/cafe.png')]">
             </div>
           </div>
           <!-- Title -->
